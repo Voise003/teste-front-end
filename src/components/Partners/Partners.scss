@@ -1,0 +1,56 @@
+
+.partners {
+    width: 100%;
+    padding: 40px 24px 64px;
+    box-sizing: border-box;
+  
+    &__container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    &__image {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+  
+    &__mobile {
+      display: none;
+    }
+  
+    @media (max-width: 600px) {
+      padding: 24px 16px 40px;
+  
+      &__image {
+        display: none;
+      }
+  
+      &__mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+  
+      &__mobile-banner {
+        width: 100%;
+        aspect-ratio: 1.85 / 1;
+  
+        background-image: url('../../assets/partners-banner.png');
+        background-repeat: no-repeat;
+        background-size: 200% 100%;
+  
+        border-radius: 12px;
+  
+        &--first {
+          background-position: left center;
+        }
+  
+        &--second {
+          background-position: right center;
+        }
+      }
+    }
+  }
+  

@@ -1,31 +1,92 @@
-# Teste Econverse: Vaga Desenvolvedor Front-End
+# Teste Técnico Front-End — Econverse
 
-### Vem ser #Econverse!
+Desenvolvimento de uma página de e-commerce responsiva, baseada no layout disponibilizado no Figma, como parte de um teste técnico para a vaga de Desenvolvedor Front-End Júnior.
 
-Segue abaixo as instruções para a execução do teste.
+## Tecnologias utilizadas
 
-## Instruções
-- Faça um fork desse projeto para a sua conta pessoal do GitHub.
-- Desenvolva a página conforme as **Especificações Técnicas** 
-- Crie um README com as instruções para compilar, testar e rodar o projeto.
-- O link do repositório deverá ser enviado para o e-mail gustavo.cipriano@econverse.com.br com o título **Teste Vaga FrontEnd**
+- React
+- TypeScript
+- Vite
+- Sass (SCSS)
+- CSS Grid e Flexbox
 
-## Especificações Técnicas
-- Desenvolver a pagina em React e TypeScript conforme o [layout](https://www.figma.com/file/rWnzPeoxgynuNPsJjV0VmV/Teste-Front-End-Jr?node-id=0%3A1). Para conseguir pegar os elementos do Figma, basta copiar o layout para sua conta que terá acesso de edição.
-- Montar a [vitrine](https://app.econverse.com.br/teste-front-end/junior/tecnologia/layout/vitrine-produtos.png) de produtos consumindo as informações dos produtos em json atraves desse [Link](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json).
-- Desenvolver a interação ao clicar em um produto conforme layout. A interação consiste em abrir um modal com as principais informações do produto presente no arquivo [JSON](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json) conforme o produto que clicar.
-- Utilizar Pré-processador Sass, Less ou Stylus.
-- Respeitar o Layout pixel a pixel, tamanho das fontes, cores e botões.
-- Não Utilizar bibliotecas UI como Bootstrap, Foundation, ou afins.
+## Funcionalidades
 
-## Pontos Extras
-- Utilizar Boas práticas de SEO
-- Uso de HTML semântico
+- Interface de e-commerce baseada no Figma.
+- Layout responsivo para desktop, tablet e dispositivos móveis.
+- Listagem de produtos consumidos de uma API.
+- Carrossel de produtos com navegação.
+- Modal para visualização de informações dos produtos.
+- Navegação horizontal de categorias e marcas em dispositivos móveis.
+- Formulário de newsletter com validação dos campos.
+- Componentização da interface utilizando React.
 
-## O que avaliaremos em seu teste
-- Organização do projeto
-- Lógica do código
-- Componentização
-- Alcance dos objetivos propostos
+## Estrutura do projeto
 
-**Boa sorte! ;)**
+O código está organizado em componentes reutilizáveis:
+
+- `Header`: cabeçalho e navegação.
+- `HeroBanner`: banner principal.
+- `Categories`: categorias de produtos.
+- `ProductSection`: listagem e carrossel de produtos.
+- `ProductModal`: modal de informações dos produtos.
+- `Partners`: banners de parceiros.
+- `Brands`: seção de marcas.
+- `Newsletter`: formulário de cadastro.
+- `Footer`: rodapé institucional.
+
+O projeto também possui diretórios específicos para serviços, tipos TypeScript, estilos e recursos visuais.
+
+## API de produtos
+
+Os produtos são obtidos a partir da API disponibilizada para o teste técnico:
+
+https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json
+
+## Como executar o projeto
+
+**Pré-requisito:** Node.js e npm instalados.
+
+Clone o repositório e acesse a pasta do projeto.
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Inicie o servidor de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+Abra no navegador o endereço indicado pelo Vite.
+
+## Build de produção
+
+Para gerar a versão de produção:
+
+```bash
+npm run build
+```
+
+Para visualizar o build localmente:
+
+```bash
+npm run preview
+```
+
+## Responsividade
+
+A interface foi adaptada para diferentes tamanhos de tela utilizando media queries, Flexbox e CSS Grid.
+
+Em dispositivos móveis, os componentes são reorganizados para facilitar a navegação e a leitura.
+
+## Objetivo
+
+Este projeto foi desenvolvido com o objetivo de aplicar conhecimentos de desenvolvimento front-end, integração com API, componentização, estilização responsiva e organização de código.
+
+## Observações
+
+Projeto desenvolvido para fins de avaliação técnica e aprendizado.
